@@ -1,0 +1,102 @@
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform .3s;
+}
+
+.slider__item{
+    min-width: 100%;
+}
+
+.slider__footer {
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slider__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* .slider__img--1 {
+    background-image: url('https://sun9-78.userapi.com/impg/ix-3DX9UeMwmuqZ0sxo0jBPLeBd8VXWfjIyAmQ/XpbPc6ujWLY.jpg?size=1080x1920&quality=95&rotate=270&sign=aba7491c089310f8d734c4654bdd6fa2&type=album');
+}
+.slider__img--2 {
+    background-image: url('https://sun9-46.userapi.com/impg/G7DTh69kmrcpWJTTWDDdWsk67wbcYAgd_25dCA/qsJSsEXDd_A.jpg?size=1399x1417&quality=95&sign=e5f5ed12e57d5e6f0feb657693e1f4e1&type=album');
+}
+
+.slider__img--3 {
+    background-image: url('https://kartinki.pics/uploads/posts/2021-07/1625871920_7-kartinkin-com-p-mislitel-art-art-krasivo-7.jpg');
+}
+
+.slider__img--4 {
+    background-image: url('https://sun9-2.userapi.com/impg/r4OLhmVBs0t2Jo3F7_MKzAPD4WHglqheSOYt3Q/n5x1FJh2Lek.jpg?size=1890x1417&quality=95&sign=f92bd1cfa038db4967bec117e07221d7&type=album');
+} */
+
+.text {
+    width: 80%;
+    background: rgba(0, 0, 0, .75);
+    color: #fff;
+    text-align: center;
+    padding: calc(50 / 1920 * 100vw);
+    box-sizing: border-box;
+}
+
+.text__title {
+    font-size: 2.25rem;
+    margin-bottom: 20px;
+}
+
+.dots {
+    display: flex;
+}
+
+.dot {
+    width: calc(50 / 1920 * 100vw);
+    height: calc(50 / 1920 * 100vw);
+    border-radius: 50%;
+    margin-right: 30px;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.dot--active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.dot:last-of-type {
+    margin-right: 0;
+}
+
+.arrow-btn {
+    padding: 0;
+    width: 20%;
+    max-width: 110px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 100%;
+}
