@@ -1,0 +1,64 @@
+/* WELCOME */
+@import "tailwindcss";
+
+:root {
+  --background: #797377;
+  --foreground: #EFEEEE;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #797377;
+    --foreground: #EFEEEE;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: serif, Helvetica, sans-serif;
+  font-size: 35px;
+}
+
+.portfolio-text {
+  font-size: 20px;
+  text-align: left;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.portfolio-text-under-img{
+  font-size: 20px;
+  text-align: center;
+}
+
+.portfolio-block-work{
+  background-color: #3E4D4D;
+  width: 160px;
+  height: fit-content;
+  border-radius: 5px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.portfolio-block{
+  background-color: #A96A4D;
+  width:100% ;
+  height:250px;
+  border-radius: 5px ;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
